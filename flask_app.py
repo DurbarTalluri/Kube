@@ -3,13 +3,6 @@ import os
 APP_PORT = os.environ.get("APPLICATION_PORT",5000)
 app = Flask(__name__)
 
-'''print("PID: ", os.getpid())
-for key, value in os.environ.items():
-    try:
-        print(key, "     ", value)
-    except:
-        pass'''
-
 @app.route("/")
 def home():
     return "welcome to flask application"
